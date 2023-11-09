@@ -7,6 +7,9 @@ For more information on this file, see
 https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
 """
 
+# Serve para fazer a ligação com Django e um servidor Web, assim como no asgi
+
+
 import os
 
 from django.core.wsgi import get_wsgi_application

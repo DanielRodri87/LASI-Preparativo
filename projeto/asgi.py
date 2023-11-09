@@ -7,6 +7,10 @@ For more information on this file, see
 https://docs.djangoproject.com/en/4.2/howto/deployment/asgi/
 """
 
+
+# Serve para fazer a ligação com Django e um servidor Web
+
+
 import os
 
 from django.core.asgi import get_asgi_application

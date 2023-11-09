@@ -1,0 +1,1 @@
+# Anotação Aula 1: Serve para indicar ao Interprador que o projeto foi desenvolvido em Python
