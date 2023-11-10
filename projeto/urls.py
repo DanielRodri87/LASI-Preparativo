@@ -5,12 +5,23 @@ from django.http import HttpResponse as res # Aqui chamo uma função genéria p
 
 
 #HTTP Request 
-def my_view(request):
-    return res('o inicio de um sonho')
+def home(request):
+    return res('HOME')
+
+def sobre(request):
+    return res("SOBRE")
+
+def contato(request):
+    return res('CONTATO')
+
+
 
 urlpatterns = [
     
     path('admin/', admin.site.urls),
-    path('', my_view),
+    path('', home), # Home
+    path('sobre/', sobre), # /sobre
+    path('contato/', contato), # Contato
+
 ]
 
