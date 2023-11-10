@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Quaisquer ep que eu criar devo atualizar aqui
+    'recipes',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +58,9 @@ ROOT_URLCONF = 'projeto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'base_templates', 
+            ], # Aqui serve para adicionar repositórios foram do padrão, por exemplo daniel/daniel.html
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
