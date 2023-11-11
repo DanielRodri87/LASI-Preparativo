@@ -60,7 +60,6 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             BASE_DIR / 'base_templates', 
-            BASE_DIR / 'recipes' / 'templates_temp'
             ], # Aqui serve para adicionar repositórios foram do padrão, por exemplo daniel/daniel.html
         'APP_DIRS': True,
         'OPTIONS': {

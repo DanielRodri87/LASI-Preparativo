@@ -11,6 +11,6 @@ def sobre(request):
     return res("SOBRE")
 
 def contato(request):
-    return render(request, 'temp.html')
+    return render(request, 'recipes/contato.html')
 
 
