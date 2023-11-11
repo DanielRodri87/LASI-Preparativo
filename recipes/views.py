@@ -7,10 +7,3 @@ def home(request):
        'name': 'Daniel',
     })
 
-def sobre(request):
-    return res("SOBRE")
-
-def contato(request):
-    return render(request, 'recipes/contato.html')
-
-
