@@ -78,6 +78,7 @@
         body {
             font-size: 1.6rem;
             font-family: var(--font-primary);
+            background-color: var(--color-gray-1);
         }
 
         .container {
@@ -105,6 +106,44 @@
         .main-header-container{
             background: var(--color-primary-dark);
         }
+
+        .search-form{
+            border: 0.2rem solid;
+            color: var(--color-primary-dark);
+            max-width: 64rem;
+            margin: 0 auto;
+            border-radius: 0.4rem;
+            position: relative;
+        }
+
+        .search-input,
+        .search-button {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 1rem;
+        }
+
+        .search-input{
+            width: 100%;
+            padding-right: 4rem;
+        }
+        .search-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .search-form:focus-within
+        {
+            border-color: var(--color-primary);
+        }
+
+        .search-form:focus-within .search-button
+        {
+            color: var(--color-primary);
+        }
+
 
     </style>
 

@@ -1,19 +1,15 @@
 {% include 'recipes/partials/head.html' %} {% comment "" %}AQUI CHAMO UMA FUNÇÃO, TIPO IF, FOR... {% endcomment %}
 
-<body>
-    <header class="main-header-container">
+<body>    
+    {% include 'recipes/partials/header.html' %}
 
-        <div class="main-header container">
-            <a class="main-logo" href="/">
-                <h1><i class="fas fa-utensils main-logo-icon" style="color: #fff;"></i>
-                    <span class="main-logo-text">Receitas do {{ name }} {% comment "" %}AQUI CHAMO UMA VARIÁVEL{% endcomment %}</span>
-                </h1>
-            </a>
+    <div class="search-container">
+        <div class="container">
+            <form action="" class="search-form">
+                <input type="search" class="search-input" name="q">
+                <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+            </form>
         </div>
-
-
-    </header>
-    
-    
+    </div>
 </body>
 </html>
