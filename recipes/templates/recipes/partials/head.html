@@ -79,6 +79,7 @@
             font-size: 1.6rem;
             font-family: var(--font-primary);
             background-color: var(--color-gray-1);
+            color: var(--color-dark-text);
         }
 
         .container {
@@ -168,12 +169,25 @@
             max-width: 100%;
             
         }
+        .recipe{
+            background: var(--color-white);
+            box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: 300ms ease-in-out;
+            transform: scale(1);
+
+        }
 
         .recipe-list-item
         {
             max-width: 64rem;
+
         }
         
+        .recipe-list-item:hover{
+            box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.4);
+            transform: scale(1.02);
+
+        }
 
     </style>
 
