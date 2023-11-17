@@ -161,8 +161,6 @@
         .main-content {
             padding-top: 0;
         }
-
-
         
         .main-content-list {
             display: grid;
@@ -262,27 +260,113 @@
         .recipe-footer a:hover{
             filter: brightness(1.2);
         }
-        .main-footer{
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+          }
+          
+          .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+          }
+          
+          /* Estilos do Rodapé */
+          .main-footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0;
+          }
+          
+          .footer__container {
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            background: var(--color-primary-dark);
-            color: var(--color-white);
-            padding: var(--spacing-gutter-large);
-        }
-
-        .main-footer a{
-            color: white;
+            flex-wrap: wrap;
+            padding-bottom: 0.2rem;
+          }
+          
+          .footer__content {
+            flex: 1;
+            margin-bottom: 20px;
+          }
+          
+          .footer__logo {
+            font-size: 24px;
+            font-weight: bold;
             text-decoration: none;
-            transition: all 300ms ease-in-out;
+            color: #fff;
+          }
+          
+          .footer__description {
+            margin-top: 10px;
+            line-height: 1.5;
+          }
+          
+          .footer__social {
+            margin-top: 20px;
+          }
+          
+          .footer__social-link {
+            margin-right: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+          }
+          
+          .footer__title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+          
+          .footer__links {
+            list-style: none;
+            padding: 0;
+          }
+          
+          .footer__link {
+            text-decoration: none;
+            color: #fff;
+            margin-bottom: 5px;
+            display: block;
+          }
+          
+          .footer__copy {
+            display: block;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #ccc;
+          }
+          
+          .footer__img-one,
+          .footer__img-two {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+          }
+
+          .footer__copy{
+            padding-left: 40%;
         }
 
-        
-        .main-footer a{
-            filter: brightness(.8);
+        #negrito{
+            font-weight: bold;
+        }
+
+        .footer-img{
+            padding-left: 20%;
         }
 
 
+        .footer__img1{
+            width: 3.5rem;
+        }
+        .footer__img2{
+            width: 5rem;
+        }
+        .footer__img3{
+            width: 3rem;
+        }
 
     </style>
 
