@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     # Quaisquer ep que eu criar devo atualizar aqui
     'recipes',
 ]
