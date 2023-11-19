@@ -69,11 +69,11 @@ body {
 
 /* Para navegadores WebKit (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 12px; 
+    width: 0.2rem; 
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: black; 
+    background-color: var(--color-primary-dark); 
 }
 
 
@@ -347,7 +347,10 @@ body {
 #negrito{
     font-weight: bold;
 }
-
+.container-frase
+{
+    padding-left: 4rem;
+}
 .footer-img{
     padding-left: 20%;
 }
