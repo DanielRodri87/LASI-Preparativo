@@ -363,7 +363,8 @@ body {
     width: 2rem;
 }
 
-.main-content-detail .recipe-list-item
+/* Enquanto estiver dentro dos detalhes, acesso a mesma classe */
+.main-content-detail .recipe-list-item 
 {
     max-width: 84rem;
     margin: 0 auto;

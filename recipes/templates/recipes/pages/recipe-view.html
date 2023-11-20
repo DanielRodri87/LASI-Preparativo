@@ -1,16 +1,7 @@
-{% include 'recipes/partials/head.html' %} {% comment "" %}AQUI CHAMO UMA FUNÇÃO, TIPO IF, FOR... {% endcomment %}
+{% extends "global/base.html" %}
 
-<body>    
-    {% include 'recipes/partials/header.html' %}
-    {% include 'recipes/partials/search.html' %}
-
-    <main class="main-content-container">
-        <div class="main-content main-content-detail container">
-            {% include "recipes/partials/recipe.html" %}
-        </div>
-        </main>
-        {% include "recipes/partials/footer.html" %}
+{% block content %}
+    <div class="main-content main-content-detail container">
+        {% include "recipes/partials/recipe.html" %}
     </div>
-
-</body>
-</html>
+{% endblock content %}

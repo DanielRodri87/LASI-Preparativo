@@ -1,30 +1,21 @@
-{% include 'recipes/partials/head.html' %} {% comment "" %}AQUI CHAMO UMA FUNÇÃO, TIPO IF, FOR... {% endcomment %}
+{% extends "global/base.html" %}
 
-<body>    
-    {% include 'recipes/partials/header.html' %}
-    {% include 'recipes/partials/search.html' %}
+{% block content %}
+    <div class="main-content main-content-list container">
+        {% include "recipes/partials/recipe.html" %}
+        {% include "recipes/partials/recipe.html" %}
+        {% include "recipes/partials/recipe.html" %}
 
-    <main class="main-content-container">
-        <div class="main-content main-content-list container">
-            {% include "recipes/partials/recipe.html" %}
-            {% include "recipes/partials/recipe.html" %}
-            {% include "recipes/partials/recipe.html" %}
+        {% include "recipes/partials/recipe.html" %}
+        {% include "recipes/partials/recipe.html" %}
+        {% include "recipes/partials/recipe.html" %}
 
-            {% include "recipes/partials/recipe.html" %}
-            {% include "recipes/partials/recipe.html" %}
-            {% include "recipes/partials/recipe.html" %}
+        {% include "recipes/partials/recipe.html" %}
+        {% include "recipes/partials/recipe.html" %}
+        {% include "recipes/partials/recipe.html" %}
 
-            {% include "recipes/partials/recipe.html" %}
-            {% include "recipes/partials/recipe.html" %}
-            {% include "recipes/partials/recipe.html" %}
-
-            {% include "recipes/partials/recipe.html" %}
-            {% include "recipes/partials/recipe.html" %}
-            {% include "recipes/partials/recipe.html" %}
-        </div>
-        </main>
-        {% include "recipes/partials/footer.html" %}
+        {% include "recipes/partials/recipe.html" %}
+        {% include "recipes/partials/recipe.html" %}
+        {% include "recipes/partials/recipe.html" %}
     </div>
-
-</body>
-</html>
+{% endblock content %}
