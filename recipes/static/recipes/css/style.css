@@ -174,9 +174,15 @@ body {
 
 }
 
+.preparation-steps{
+    padding: var(--spacing-gutter-medium);
+}
+
+
 .recipe-list-item
 {
     max-width: 64rem;
+    height: fit-content;
 
 }
 
