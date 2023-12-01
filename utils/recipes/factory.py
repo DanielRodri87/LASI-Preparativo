@@ -14,6 +14,7 @@ fake = Faker('pt_BR') # Defino o idioma como PortuguÊs
 
 def make_recipe():
     return {
+        'id': fake.random_number(digits=2, fix_len=True),
         'title': fake.sentence(nb_words=6), # Chamo o titulo
         'description': fake.sentence(nb_words=12), # Descrição
         'preparation_time': fake.random_number(digits=2, fix_len=True), # Tempo de preparação
