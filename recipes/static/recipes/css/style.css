@@ -380,6 +380,10 @@ body {
 .main-content-detail .recipe-list-item:hover{
     box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2);
     transform: scale(1);
-
 }
 
+#img-recipes
+{
+    width: 350px;
+    height: 200px;
+}
